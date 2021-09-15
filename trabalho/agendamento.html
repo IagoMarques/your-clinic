@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Your Clinic</title>
+		<meta charset="utf-8">
+
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!--JScript
+		<script src="js/script.js"></script>-->
+
+	</head>
+
+	<body id="uma-coluna" class="agendamento">
+
+		<!-- Início container -->
+		<div id="container">
+
+			<!-- Início topo -->
+			<div id="topo">
+				<h1 class="logo">Your Clinic</h1>
+				<ul id="navegacao">
+					<li class="primeiro">
+						<a id="home" href="index.html">home</a>
+					</li>
+				
+					<li>
+						<a id="agendamento" href="agendamento.html">Agendamento</a>
+					</li>
+					
+					<li>
+						<a id="fotos" href="fotos.html">Fotos</a>
+					</li>
+				</ul>
+			</div><!-- fim /topo -->
+
+			<!-- Início conteudo -->
+			<div id="conteudo">
+
+				<div id="primario">
+					
+					<div class="caixa destaque">
+						<h2>Formulário para Agendamento</h2>
+						<div class="caixa-conteudo">
+
+						
+							<form action="mailto:leonardobenevides@unifor.br" method="post" enctype="text/plain" class="agendamento">
+								<div>
+									<label for="name">Digite seu nome:</label>
+									<input type="name" id="name" oninput="getVal()" required>
+								</div>
+
+								<div>
+									<label for="rg">RG:</label>
+									<input type="number" placeholder="412363" id="rg" required>
+								</div>
+
+								<div>
+									<label for="cpf">CPF:</label>
+									<input type="number" placeholder="123.456.789-10" id="cpf" required>
+								</div>
+
+								<div>
+									<label for="mae">CEP:</label>
+									<input type="number" required>
+								</div>	
+
+								<div>
+									<label>Possui necessidades especiais?</label>
+									
+									<input class="afasta-esq" type="radio" name="necess" value="Sim" id="necess">Sim
+																		
+									<input type="radio" name="necess" value="Não" id="necess" checked>Não
+									
+								</div>
+
+								<div>
+									<label>É portador de comorbidade?</label>
+									
+									<input class="afasta-esq" type="radio" name="comorb" value="Sim" id="comorb">Sim
+																		
+									<input type="radio" name="comorb" value="Não" id="comorb" checked>Não
+									
+								</div>
+
+								<div>
+									<label>É alérgico a algum medicamento?</label>
+									
+									<input class="afasta-esq" type="radio" name="alergic" value="Sim" id="alergic">Sim
+									
+									<input type="radio" name="alergic" value="Não" id="alergic" checked>Não
+									
+								</div>
+
+								<div>
+									<label>Número</label>
+
+									<input type="tel" id="tel">
+								</div>
+
+								<div>
+									<label>Email</label>
+									<input type="email" id="email" required>
+								</div>
+
+								<div>
+									<input type="submit" value="Marcar">
+								</div>
+
+
+							</form>
+							
+
+						</div>
+					</div>
+
+				</div>
+				
+			</div><!-- fim /conteudo -->
+
+		</div><!-- fim /container -->
+
+		<div id="container-rodape" style="clear: both;">
+			<div id="rodape">
+				&copy; Copyright 2000-2018 Notícias cidade
+			</div>
+		</div>
+
+	</body>
+
+	<!--<script>
+		var form = document.getElementById('form')
+
+		form.addEventListener('submit',function(event){
+    		event.preventDefault()
+
+    		var name = document.getElementById('name').value
+
+    		console.log(name)
+		})
+	</script>-->
+
+</html>
